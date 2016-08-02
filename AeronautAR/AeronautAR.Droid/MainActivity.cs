@@ -24,15 +24,14 @@ namespace AeronautAR.Droid
 
             SetContentView(_textureView);
 
+            // Loads all the shared code.
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }
 
         public void OnSurfaceTextureAvailable(Android.Graphics.SurfaceTexture surface, int width, int height)
         {
-            //throw new NotImplementedException();
             _camera = Camera.Open();
-
             _textureView.LayoutParameters = new FrameLayout.LayoutParams(width, height);
 
             try
