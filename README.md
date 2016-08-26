@@ -1,2 +1,2 @@
 # AeronautAR
-Base for mobile AR application
+Mobile AR application repo for porting/etc.
